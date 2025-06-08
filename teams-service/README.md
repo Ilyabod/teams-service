@@ -1,25 +1,29 @@
 # Teams Service (Node.js + TypeScript + MariaDB)
 
-Микросервис агрегирует информацию о спортивных командах из разных таблиц и возвращает её через REST API.
+This microservice aggregates information about sports teams from different tables and exposes it via a REST API.
 
-## 📦 Установка
+## Installation
 
-1. Установи Docker и Docker Compose
-2. Клонируй репозиторий и перейди в него
-3. Запусти:
+- Install Docker and Docker Compose
+- Clone the repository and navigate to its directory
+
+Run:
 
 ```bash
 docker-compose up --build
 ```
 
-MariaDB автоматически инициализируется с базовой схемой из init.sql.
+MariaDB will be automatically initialized with the base schema from init.sql.
 
-## API эндпоинты
-Все запросы обрабатываются по префиксу: /api/teams.
+## API Endpoints
 
-- GET	/teams	 -- Получить агрегированные данные о командах
-- POST	/teams	-- Создать новую команду
-- PUT	/teams/:id	-- Полностью обновить команду по ID
-- PATCH	/teams/:id	--Частично обновить команду по ID
-- DELETE	/teams?id={id}	-- Удалить команду по ID (в query параметре)
+All requests are served under the /api/teams prefix.
+
+- GET /teams — Retrieve aggregated data about teams
+- POST /teams — Create a new team
+- PUT /teams/:id — Fully update a team by ID
+- PATCH /teams/:id — Partially update a team by ID
+- DELETE /teams?id={id} — Delete a team by ID (provided as a query parameter)
+
+
 
