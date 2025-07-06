@@ -1,6 +1,6 @@
 # Teams Service (Node.js + TypeScript + MariaDB)
 
-This microservice aggregates information about sports teams from different tables and exposes it via a REST API.
+This good microservice aggregates information about sports teams from different tables and exposes it via a REST API.
 
 ## Installation
 
